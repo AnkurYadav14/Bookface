@@ -1,0 +1,104 @@
+.login {
+  height: 100vh;
+  background-color: #c4e9d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 60%;
+    display: flex;
+    background-color: white;
+    min-height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .left-section {
+      flex: 1;
+      background: linear-gradient(
+          rgba(22, 173, 128, 0.5),
+          rgba(11, 96, 39, 0.5)
+        ),
+        url("../../assets/login-img.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 50px;
+
+      .site-info{
+        h1 {
+            font-size: 5rem;
+            color: white;
+          }
+    
+          p {
+            color: white;
+            margin: 20px 0;
+          }
+      }
+      
+
+      .register-info {
+
+        span {
+          font-size: 14px;
+          color: white;
+          font-weight: 500;
+        }
+
+        button {
+          background-color: #afeac4;
+          color: black;
+          border: none;
+          width: 50%;
+          height: 30px;
+          font-size: 1rem;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .right-section {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+
+      h1 {
+        font-size: 2rem;
+        color: #555;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+           border: none;
+           border-bottom: 1px solid #888686;
+           padding: 10px 10px;
+           outline: none;
+           font-size: 1rem;
+        }
+
+        button {
+            background-color: #afeac4;
+            color: #555;
+            border: none;
+            width: 50%;
+            height: 30px;
+            font-size: 1rem;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+      }
+    }
+  }
+}
